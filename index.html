@@ -2,23 +2,36 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Editor de Fotos</title>
+  <title>Editor de Fotos V2 🎨</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Mini Editor de Fotos 🎨</h1>
+  <h1>Editor de Fotos V2 🎨</h1>
   
   <input type="file" id="upload" accept="image/*">
+
+  <div class="sliders">
+    <label>Brilho: <span id="brightnessVal">100</span>%</label>
+    <input type="range" id="brightness" min="0" max="200" value="100">
+    
+    <label>Contraste: <span id="contrastVal">100</span>%</label>
+    <input type="range" id="contrast" min="0" max="200" value="100">
+    
+    <label>Saturação: <span id="saturationVal">100</span>%</label>
+    <input type="range" id="saturation" min="0" max="200" value="100">
+  </div>
+
   <canvas id="canvas"></canvas>
-  
+
   <div class="controls">
     <button onclick="applyFilter('grayscale(100%)')">Preto e Branco</button>
     <button onclick="applyFilter('sepia(100%)')">Sépia</button>
     <button onclick="applyFilter('invert(100%)')">Inverter Cores</button>
+    <button onclick="rotateImage(90)">Girar 90°</button>
     <button onclick="addText()">Adicionar Texto</button>
     <button onclick="downloadImage()">Baixar Imagem</button>
   </div>
-  
+
   <script src="script.js"></script>
 </body>
 </html>
