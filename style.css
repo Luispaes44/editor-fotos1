@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+#canvas {
+  margin: 20px auto;
+  border: 2px solid #333;
+  display: block;
+  max-width: 90%;
+}
+
+.controls button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: #45a049;
+}
