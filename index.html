@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Editor de Fotos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Mini Editor de Fotos 🎨</h1>
+  
+  <input type="file" id="upload" accept="image/*">
+  <canvas id="canvas"></canvas>
+  
+  <div class="controls">
+    <button onclick="applyFilter('grayscale(100%)')">Preto e Branco</button>
+    <button onclick="applyFilter('sepia(100%)')">Sépia</button>
+    <button onclick="applyFilter('invert(100%)')">Inverter Cores</button>
+    <button onclick="addText()">Adicionar Texto</button>
+    <button onclick="downloadImage()">Baixar Imagem</button>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
